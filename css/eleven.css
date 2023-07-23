@@ -1,0 +1,84 @@
+/* Mini Project two - Position property */
+html{
+    scroll-behavior: smooth;
+}
+section{
+    height: 100vh;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+header , footer{
+    text-align: center;
+    font-size: 3rem;
+    color: whitesmoke;
+    padding: 1rem;
+    height: 80px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+footer{
+    /* position: fixed;  or */
+    bottom: 0;
+    position: sticky;
+    background-color: black;
+    
+}
+
+footer a{
+    color: azure;
+}
+
+.facebook{
+    background-color: aqua;
+    font-size: inherit;
+    color: blue;
+    position: fixed;
+    left: 0;
+    top: 30%;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    z-index: 1050;
+
+}
+.twitter{
+    background-color: aqua;
+    font-size: inherit;
+    color: blue;
+    position: fixed;
+    left: 0;
+    top: 40%;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    z-index: 1050;
+
+}
+
+.facebook span{
+    position: relative;
+    top: 6px;
+    left: 0;
+}
+.twitter span{
+    position: relative;
+    top: 6px;
+    left: 0;
+}

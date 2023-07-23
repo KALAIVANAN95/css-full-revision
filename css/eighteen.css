@@ -1,0 +1,101 @@
+/* CSS Variables - chapter 20 start here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --BGCOLOR:#475569;
+    --ALT-BGCOLOR:#1e293b;
+    --RADIAL-COLOR:whitesmoke;
+    --TEXT-COLOR:whitesmoke;
+    --DARK-COLOR:#000;
+
+    --FF:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --FS:1.5rem;
+    --FS-XL:3rem;
+
+    --PADDING:0.5em;
+    --SHADWOS:0 6px 5px -5px var(--DARK-COLOR);
+    --BORDERS:2px solid var(--DARK-COLOR);
+
+    --SQURE-BGCOLOR:papayawhip;
+    --SQURE-SIZE:max(150px,20vw);
+}
+
+
+/* DARK MODE */
+
+@media (prefers-color-scheme:light) {
+    :root{
+        --BGCOLOR:black;
+        --ALT-BGCOLOR:grey;
+        --RADIAL-COLOR:rgb(158,113,158);
+    }
+}
+
+body{
+    font-size: var(--FS);
+    min-height: 100vh;
+    font-family:var(--FF) ;
+    background-color: var(--BGCOLOR);
+    background-image: radial-gradient(var(--RADIAL-COLOR),var(--BGCOLOR));
+    display: flex;
+    flex-direction: column;
+}
+
+
+header,nav,footer{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+main{
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    gap: min(4vw,16px);
+    padding: 10px 0;
+}
+
+main .squre{
+background-color: var(--SQURE-BGCOLOR);
+width: var(--SQURE-SIZE);
+height: var(--SQURE-SIZE);
+border: var(--BORDERS);
+border-radius: 15px;
+display: grid;
+place-content: center;
+font-size: var(--FS);
+box-shadow: var(--SHADWOS);
+}
+
+.highlight{
+    --SQURE-BGCOLOR:blue;
+}
+
+header,footer{
+    position: sticky;
+    background-color:var(--ALT-BGCOLOR);
+    color: var(--TEXT-COLOR);
+}
+
+header{
+    top: 0;
+}
+footer{
+    bottom: 0;
+}
+nav{
+    background-color: #fff;
+    color: var(--DARK-COLOR);
+    padding: 0.5em;
+    border-bottom: var(--BORDERS);
+    box-shadow: var(--SHADWOS);
+}
+/* CSS Variables - chapter 20 end here */

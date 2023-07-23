@@ -1,0 +1,39 @@
+/* Typography is the way that text is arranged and presented */
+
+/* Typograpy-Chapter6 - start here */
+body{
+    padding: 2%;
+    font-size: 1.5rem;
+}
+
+header h1{
+    border: 2px dotted red;
+    font-size: 3rem;
+    padding: 0.1em;
+ }
+ 
+input, button{
+    font-size: inherit;
+}
+
+#second {
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-align: justify;
+    /* text-decoration: overline;
+    text-decoration: line-through; */
+    letter-spacing: 0.2em;
+    word-spacing: 0.2em;
+}
+
+.gray{
+    text-indent: 2em;
+    line-height: 1.5;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
+/* Typograpy-Chapter6 - end here */

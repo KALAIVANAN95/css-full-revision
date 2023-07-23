@@ -1,0 +1,32 @@
+/* Styling Links-Chapter7 start here */
+body{
+    padding: 2%;
+    font-size: 1.5rem;
+}
+
+header h1{
+    border: 2px dotted red;
+    font-size: 3rem;
+    padding: 0.1em;
+ }
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(255, 165, 0);    /* regular using */
+
+    
+}
+
+a:visited{
+    color: brown;
+}
+
+a:active{
+    color:yellow;
+}
+
+a:hover, a:focus{
+    color: rgba(255, 165, 0.5);     /* regular using */
+}
+/* Styling Links-Chapter7 end here */

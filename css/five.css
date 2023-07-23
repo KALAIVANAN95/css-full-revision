@@ -1,0 +1,50 @@
+/* List styles-Chapter8 start here */
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+body{
+    font-size: 1.5rem;
+    padding: 2%;
+}
+header h1{
+    border: 2px dotted red;
+    font-size: 3rem;
+    padding: 0.1em;
+ }
+
+
+ ol{
+    list-style-type: upper-roman;
+ }
+
+ ol li:nth-child(3){
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 25px;
+
+ }
+ ol li::marker{
+    font-size: 20px;
+    color: yellow;
+    content: "done >>";
+ }
+ ul{
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    /* list-style-image: url(); */
+ }
+
+ ul li:nth-last-child(2){
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+ }
+/* List styles-Chapter8 end here */

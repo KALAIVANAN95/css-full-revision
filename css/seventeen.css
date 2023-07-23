@@ -1,0 +1,210 @@
+/*CSS-Pseudo class - 19 start here*/
+
+/* CSS Card Project - Chapter18 start here */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 1.5rem;
+    min-height: 100vh;
+    background-color: #475569;
+    background-image: radial-gradient(white-space,#475569);
+    display: flex;
+    flex-direction: column;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+header,footer{
+    background-color: #1e293b;
+    text-align: center;
+    color: whitesmoke;
+    position: sticky;
+}
+header{
+    top: 0;
+}
+nav{
+    background-color: white;
+    padding: 0.5em;
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a,
+nav a:visited{
+    color: #000;
+}
+
+nav a:hover,
+nav a:focus{
+    color: hsla(0, 0%, 20%, 0.6);
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+.card{
+    scroll-margin-top: 8rem;
+    width: min(100%,350px);
+    background-color: #cbd5e1;
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card figure{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card img{
+    border: 2px solid #333;
+    /* border-radius: 50%; */
+}
+
+.card figcaption, .card p{
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+footer{
+    bottom: 0;
+}
+
+
+.nowrap{
+    white-space: nowrap;
+}
+
+
+/* small */
+
+@media screen and (min-width:576px) {
+    main{
+        padding: 1rem;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
+    .card{
+        width: min(100%,400px);
+    }
+    .card:last-child{
+        order: -1;
+    }
+}
+
+/* medium */
+
+@media screen and (min-width:768px) {
+
+    nav{
+        display: none;
+    }
+
+    .card{
+        width: min(100%,325px);
+    }
+
+    .card figure{
+        flex-flow: column-reverse;
+    }
+
+    .card p{
+        margin-top: 1rem;
+    }
+
+}
+
+/* large */
+@media screen and (min-width:992px) {
+    .card{
+        width: min(100%,400px);
+    }
+    .card:nth-child(2){
+        order: -1;
+    }
+}
+
+/* extra large */
+@media screen and (min-width:1200px) {
+    .card{
+        width: min(33% - 1rem,500px);
+    }
+}
+
+
+/* mobile device landscape */
+@media screen and (max-height:425px) and (min-aspect-ratio:7/4) {
+    h1{
+        font-size: 1.5rem;
+    }
+    nav{
+        display: none;
+    }
+    main {
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+      }
+    
+      .card {
+         width: min(33% - 0.25rem, 200px);
+      }
+    
+      .card figcaption,
+      .card p {
+        font-size: 1.25rem;
+      }
+
+    
+}
+/* CSS Card Project - Chapter18 end here */
+
+/* 
+PSUDO CLASS SELECTOR */
+
+.card:target{
+    border: 5px solid green;
+}
+
+.card img[alt]{
+    border: 5px solid red;
+}
+.card img:not([alt]){
+    border: 5px solid yellow;
+}
+ 
+.card figcaption::after{
+    content: '\2728';
+    display: block;
+}
+
+.card p::before{
+    content: '\212B';
+}
+/*CSS-Pseudo class - 19 end here*/

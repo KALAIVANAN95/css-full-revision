@@ -1,0 +1,88 @@
+/* CSS Media Queries - Chapter17 start here */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.5rem;
+    min-height: 100vh;
+    background-color: blue;
+    background-image: radial-gradient(whitesmoke,blue);
+    display: flex;
+    flex-direction: column;
+}
+
+header,nav,main,footer{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+nav{
+    background-color: white;
+    color: #1E293B;
+    padding: 0.5rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+header,footer{
+    background-color: #1E293B;
+    color: whitesmoke;
+    position: sticky;
+
+}
+
+main{
+    flex-grow: 1;
+}
+header{
+    top: 0;
+}
+
+footer{
+    bottom: 0;
+}
+
+
+@media screen and (min-width:576px) {
+    body{
+        background-color: green;
+        background-image: radial-gradient(whitesmoke,green);
+    }
+
+    nav{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:768px) 
+{
+    body{
+        background-color: red;
+        background-image: radial-gradient(whitesmoke,red);
+    }    
+}
+
+@media screen and (min-width:992px) {
+    body{
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke,gold);
+    }
+}
+
+
+/* mobile screen landscape */
+
+@media screen and (max-height:425px) and (min-aspect-ratio:7/4) {
+    body{
+        background-color: purple;
+        background-image: radial-gradient(whitesmoke,purple);
+    }
+}
+/* CSS Media Queries - Chapter17 end here */

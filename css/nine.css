@@ -1,0 +1,42 @@
+/* Column-Chapter12 - start here */
+body{
+    font-size: 1.5rem;
+}
+header h2{
+    border: 2px dotted red;
+    font-size: 3rem;
+    padding: 0.1em;
+ }
+
+ .column{
+    /* column-count: 4;
+    column-width: 200px;  or*/
+
+    columns: 4 250px;
+    column-rule: 3px solid #333;
+ }
+
+ .column p:first-child{
+    margin-top: 0;  
+ }
+
+ .column h3{
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    margin: 0;
+    break-inside: avoid;
+ }
+
+ .quote{
+    color: #333;
+    text-align: center;
+    font-size: 2.5rem;
+    column-span: all;
+ }
+
+ .nowrap {
+    white-space: nowrap;
+ }
+ /* Column-Chapter12 - end here */

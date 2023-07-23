@@ -1,0 +1,83 @@
+/* Image Styling - Chapter16 start here */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 120vh;
+}
+
+img{
+    display: block;
+}
+.example{
+    margin-top: 1rem;
+    padding-left: 20px;
+    border: 2px solid red;
+}
+
+.example img{
+    width: 25%;
+    height: auto;
+    object-fit: contain;
+}
+
+.hero{
+    border-bottom: 2px solid #333;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    background-color: bisque;
+    background: url('../images/html.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.h1{
+    font-size: 400%;
+    color: antiquewhite;
+    text-shadow: 2px 2px 5px black;
+    background-color: hsl(0,0%, 0%,0.452);
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.offscreen{
+    position: absolute;
+    left: -10000px;
+}
+.profile-pic{
+    width: 35%;
+}
+
+.profile-pic img{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+  
+    border: 3px double #333;
+    border-radius: 50%;
+}
+
+.clip{
+    font-weight: 800;
+    font-size: 5rem;
+    text-align: center;
+    background-image: url('../images/css.jpg');
+    background-size: 100%;
+    color:transparent;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    background-position: top;
+}
+/* Image Styling - Chapter16 end here */

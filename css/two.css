@@ -1,0 +1,40 @@
+/* Box model-Chapter5 - start here */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header h1{
+  border: 2px dotted red;
+  font-size: 3rem;
+  padding: 0.1em;
+}
+.container {
+  border: 5px double red;
+  font-size: 1.5rem;
+  padding: 1.5em;
+  margin: 1.5em;
+}
+
+.circle{
+  border: 10px solid burlywood;
+  width: 100px;
+  height: 100px;
+  margin: 2em;
+  outline: 5px dashed darkblue;
+  outline-offset: 10px;
+  border-radius: 50%;
+  background: yellow;
+  position: relative;
+}
+
+.circle h1{
+  overflow: hidden;
+  text-overflow: clip;
+  position: absolute;
+  left: 10px;
+  bottom: 20px
+}
+/* Box model-Chapter5 - end here */

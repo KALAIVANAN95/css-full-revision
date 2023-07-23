@@ -1,0 +1,162 @@
+/* CSS Functions - chapter 21 start here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --BGCOLOR: #475569;
+  --ALT-BGCOLOR: #1e293b;
+  --RADIAL-COLOR: whitesmoke;
+  --TEXT-COLOR: whitesmoke;
+  --DARK-COLOR: #000;
+
+  --FF: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --FS: 1.5rem;
+  --FS-XL: 3rem;
+
+  --PADDING: 0.5em;
+  --SHADWOS: 0 6px 5px -5px var(--DARK-COLOR);
+  --BORDERS: 2px solid var(--DARK-COLOR);
+
+  --SQURE-BGCOLOR: papayawhip;
+  --SQURE-SIZE: max(150px, 20vw);
+}
+
+/* DARK MODE */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --BGCOLOR: black;
+    --ALT-BGCOLOR: grey;
+    --RADIAL-COLOR: rgb(158, 113, 158);
+  }
+}
+
+body {
+  font-size: clamp(0.75rem, 2vh, 1rem);
+  min-height: 100vh;
+  font-family: var(--FF);
+  background-color: var(--BGCOLOR);
+  background-image: radial-gradient(var(--RADIAL-COLOR), var(--BGCOLOR));
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+nav,
+footer {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+}
+
+main section {
+  flex-grow: 1;
+  padding: var(--PADDING);
+}
+
+main aside {
+  background-color: red;
+  font-size: var(--FS);
+  color: beige;
+  font-style: italic;
+  padding: var(--PADDING);
+}
+
+.highlight {
+  --SQURE-BGCOLOR: blue;
+}
+
+header,
+footer {
+  position: sticky;
+  background-color: var(--ALT-BGCOLOR);
+  color: var(--TEXT-COLOR);
+}
+
+header {
+  top: 0;
+}
+footer {
+  bottom: 0;
+}
+nav {
+  background-color: #fff;
+  color: var(--DARK-COLOR);
+  padding: 0.5em;
+  border-bottom: var(--BORDERS);
+  box-shadow: var(--SHADWOS);
+}
+
+
+a:any-link{
+    color: firebrick;
+}
+
+a:hover, a:focus{
+    filter: brightness(150%);
+}
+
+/* This is new check it */
+
+
+.tooltip{
+    border-bottom: 2px dotted wheat;
+    position: relative;
+    margin-top: 20px;
+}
+
+.tooltip p{
+    margin: 30px;
+}
+.tooltip:hover::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -20px;
+    background-color:var(--DARK-COLOR);
+}
+
+.mains{
+    flex-grow: 1;
+
+    display: grid;
+    grid-template-columns: repeat(4,minmax(100px,300px));
+    gap: min(2vh,20px)
+}
+.mains .squre{
+    background-color: var(--SQURE-BGCOLOR);
+    width: var(--SQURE-SIZE);
+    height: var(--SQURE-SIZE);
+    border: var(--BORDERS);
+    border-radius: 15px;
+    display: grid;
+    place-content: center;
+    font-size: var(--FS);
+    box-shadow: var(--SHADWOS);
+    margin-top: 30px;
+    }
+/* @media screen and (min-width: 576px) {
+  main {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  main section {
+    width: calc(70%-5px);
+  }
+
+  main aside {
+    width: calc(30%-5px);
+  }
+} */
+/* CSS Functions - chapter 21 end here */

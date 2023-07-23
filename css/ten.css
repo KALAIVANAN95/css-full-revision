@@ -1,0 +1,71 @@
+/* Position-Chapter13 - start here */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+header h2{
+    border: 2px dotted red;
+    font-size: 3rem;
+    padding: 0.1em;
+ }
+
+ .outer-container{
+    border: 3px dashed blue;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+    position: relative;
+ }
+ .inner-container{
+    border: 2px solid black;
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+    
+ }
+
+ .box{
+    width: 120px;
+    height: 120px;
+    padding: 1rem;
+    color: white;
+    margin: 10px;
+ }
+
+
+.absolute{
+    position: absolute;
+    background-color: brown;
+    top: 0;
+    left: 0;
+   
+}
+
+
+.relative{
+    background-color: red;
+    top: 100px;
+    left: 100px;
+    position: relative;
+}
+
+
+.fixed{
+    position: fixed;
+    background-color: green;
+    top: 200px;
+    left: 200px;
+}
+
+.sticky{
+    background-color: black;
+    top: 0;
+    position: sticky;
+}
+ /* Position-Chapter13 - end here */

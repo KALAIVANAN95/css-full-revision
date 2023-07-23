@@ -1,0 +1,103 @@
+/* Tag Chapter1 start here */
+/* p{
+    color: blue;
+} */
+
+/*Tag Chapter1 end here */
+
+
+/* Selector Chapter2  start here */
+
+ /* *{
+   
+    font-family: monospace;
+    border: 3px solid yellow;
+} 
+button, input, textarea{
+    font:inherit;
+}
+
+*/
+
+
+header h1{
+    text-align: center;
+    
+}
+h1, h2{
+    color: green;
+    margin: 0.5em;
+}
+p{
+    color:blue;
+    margin: 0.5em;
+
+}
+
+p span {
+    background-color: red;
+    color: white;
+    margin: 0.5em;
+}
+
+.gray{
+    color: gray;
+    font-style: italic;
+    margin: 0.5em;
+}
+
+#second{
+    color: burlywood;
+}
+
+/* Selector Chapter2 end here */
+
+
+
+/* color - Chapter3 start here */
+body{
+  /* font-size: 22px; don't use this */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+  /* color: navy; 
+   i)rgb,
+   2)rgba, 
+   3)hexadecimal values*/
+  color: rgb(0, 0, 0);
+}
+/* color - Chapter3 end here */
+
+/* Units&Size - Chapter4 start here */
+/* body{
+    font-size: 16px;
+    REM-Font size of the root element
+    EM-Font size of the parent
+
+} */
+
+header h1{
+   border: 2px dotted red;
+   font-size: 3rem;
+   padding: 0.1em;
+}
+
+/* Units&Size - Chapter4 end here */
+
+
+/* Box model-Chapter5 - start here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    border: 2px dotted red;
+    font-size: 1.5rem;
+    padding: 0.1em;
+    margin: 0.5em;
+    margin-top: 1.5em;
+ }
+
+
+/* Box model-Chapter5 - end here */
+
